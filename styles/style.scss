@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-block: 0.7rem;
+}
+
+// Global
+
+$header_height: 10rem;
+
+// Header
+
+.exercise__header {
+  background-color: lightblue;
+  height: $header_height;
+}
+
+// Exercise
+
+.exercise {
+  box-sizing: border-box;
+  height: calc(100vh - $header_height);
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+// Acordion
+
+.acordion__container {
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 2rem;
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.acordion__title {
+  align-items: center;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+  img {
+    transition: transform 0.3s ease;
+  }
+}
+
+.acordion__content {
+  background-color: white;
+  margin-bottom: 0.3rem;
+  margin-left: 0;
+  max-height: 0px;
+  overflow: hidden;
+  padding-left: 1.3rem;
+  transition: max-height 0.3s ease;
+}
