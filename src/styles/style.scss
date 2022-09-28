@@ -11,17 +11,31 @@ h2 {
   margin-block: 0.7rem;
 }
 
+// Global
+
+$header_height: 10rem;
+
+.prevent-select {
+  user-select: none;
+}
+
+// Header
+
 .exercise__header {
   background-color: lightblue;
-  height: 10rem;
+  height: $header_height;
 }
+
+// Exercise
 
 .exercise {
   box-sizing: border-box;
-  height: calc(100vh - 10rem);
+  height: calc(100vh - $header_height);
   padding: 3rem 2rem;
   width: 100%;
 }
+
+// Acordion
 
 .acordion__container {
   background-color: rgb(241, 241, 241);
@@ -41,9 +55,9 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   padding: 0.1rem 0.4rem 0.1rem 0.4rem;
-}
-.acordion__title img {
-  transition: transform 0.3s ease;
+  img {
+    transition: transform 0.3s ease;
+  }
 }
 
 .acordion__content {
@@ -54,4 +68,4 @@ h2 {
   overflow: hidden;
   padding-left: 1.3rem;
   transition: max-height 0.3s ease;
-}/*# sourceMappingURL=style.css.map */
+}

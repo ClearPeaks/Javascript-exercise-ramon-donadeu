@@ -1,6 +1,5 @@
 var elements = document.getElementsByClassName("acordion__title")
 
-
 for(let acordion of elements){
     acordion.addEventListener('click', () => {
         const activeAcordion = acordion.parentElement.getAttribute('activeAcordion')
@@ -24,5 +23,3 @@ for(let acordion of elements){
     })
 }
 
-
-console.log("Arriba?")
