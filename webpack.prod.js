@@ -11,6 +11,7 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, "dist"),
         clean: true,
         publicPath: path.resolve(__dirname, "dist"),
+        assetModuleFilename: 'images/[name].[hash].[ext]'
     },
     plugins: [new CleanWebpackPlugin()]
 });
