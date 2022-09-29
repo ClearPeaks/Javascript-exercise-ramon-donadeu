@@ -11,26 +11,11 @@ h2 {
   margin-block: 0.7rem;
 }
 
-// Global
-
-$header_height: 10rem;
-
-.prevent-select {
-  user-select: none;
-}
-
-// Header
-
-.exercise__header {
-  background-color: lightblue;
-  height: $header_height;
-}
-
 // Exercise
 
 .exercise {
   box-sizing: border-box;
-  height: calc(100vh - $header_height);
+  height: calc(100vh);
   padding: 3rem 2rem;
   width: 100%;
 }
@@ -58,6 +43,7 @@ $header_height: 10rem;
   img {
     transition: transform 0.3s ease;
   }
+  font-size: 1.1rem;
 }
 
 .acordion__content {
@@ -68,4 +54,18 @@ $header_height: 10rem;
   overflow: hidden;
   padding-left: 1.3rem;
   transition: max-height 0.3s ease;
+  font-size: 1.1rem;
+}
+
+//responsive
+
+@media (max-width: 800px) {
+  .acordion__title {
+    h2 {
+      font-size: 3em;
+    }
+  }
+
+  .acordion__content {
+  }
 }

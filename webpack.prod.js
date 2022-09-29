@@ -5,7 +5,7 @@ const path = require('path')
 const  { fileURLToPath } = require ('url');
 
 module.exports = merge(common, {
-    mode: "development",
+    mode: "production",
     output: {
         filename: "main.[contenthash].js",
         path: path.resolve(__dirname, "dist"),
