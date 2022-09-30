@@ -46,3 +46,12 @@ The documentation is alredy generated but in case you make changes you can build
 ```
 $ npm run build
 ```
+
+### Test
+
+I've tried to do the testing using Jest, but I didn't did it succesfully.
+I know which tests I would have run:
+
+- Check if an acordion opens on click
+- Check if the same acordion opens on click
+- Check if an opern acordion closes when clicking another acordion
