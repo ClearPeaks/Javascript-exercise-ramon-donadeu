@@ -49,7 +49,7 @@ $ npm run build
 
 ### Test
 
-I've tried to do the testing using Jest, but I didn't did it succesfully.
+I've tried to do the testing using Jest, but I didn't get it.
 I know which tests I would have run:
 
 - Check if an acordion opens on click
