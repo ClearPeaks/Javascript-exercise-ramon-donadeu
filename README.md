@@ -1,32 +1,48 @@
-## 🚀 JavaScript Exercise
+# Clearpeaks Exercice
 
-We want to create an accordion displaying only the content of a section at the same time.
+This project is an exercice provided by Cleapeaks to test programming habilities submited by Ramon Donadeu
 
-You must follow the next code sample.
+It consists on a group of Acordions that on click will open the content for each of the containers.
+Only one of the acordions can be open at the same time, so when an acordion is open, and another one is clicked, the first one closes.
 
+## Technologies
 
-```html
-<dl>
-  <dt>Section 1</dt>
-  <dd>
-    <p>Section 1 Content...</p>
-  </dd>
-  <dt>Section 2</dt>
-  <dd>
-    <p>Section 2 Content...</p>
-  </dd>
-  <dt>Section 3</dt>
-  <dd>
-    <p>Section 3 Content...</p>
-  </dd>
-</dl>
+Project is created with:
+
+- HTML
+- Sass
+- VanillaJS
+- Webkit
+- JSDoc
+
+## Setup
+
+To run this project, intall it locally using npm:
+
+```
+$ npm i
 ```
 
-## 📦 Conditions
-* Use Sass for generate CSS
-* Use ES6
-* Use only Vanilla JS, without any JS framework
+#### Development
 
+If you want to do changes in the code, you should run it in development mode using:
 
-## ⭐️ Bonus
-* Add new section with Ajax content
+```
+$ npm run start
+```
+
+#### Production
+
+If you want to build the project for production:
+
+```
+$ npm run build
+```
+
+#### Docs
+
+The documentation is alredy generated but in case you make changes you can build them again with:
+
+```
+$ npm run build
+```
